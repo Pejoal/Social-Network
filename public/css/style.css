@@ -1,0 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h2 {
+  text-align: center;
+  margin: 0.6rem 0;
+}
+
+nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 1rem 0 0;
+}
+
+.form {
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 80%;
+  background-color: #ddd;
+  border-radius: 0.6rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button[type="submit"] {
+  display: block;
+  width: 90%;
+  padding: 0.6rem 1.3rem;
+  margin: 0.7rem auto;
+  font-size: 1.2rem;
+  text-indent: 0.7rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  outline: 0.15rem #32f solid;
+}
+
+button[type="submit"] {
+  margin-top: 0.7rem;
+  width: 60%;
+  color: white;
+  background-color: #34f;
+  text-align: center;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  transition-property: font-size, background-color;
+  border-radius: 1rem;
+}
+
+button[type="submit"]:hover {
+  font-size: 1.5rem;
+  background-color: #11f;
+}
+
+#body {
+  border-radius: 0.6rem;
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  resize: vertical;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.4);
+  margin-left: 0.5rem;
+}
+
+#body:focus {
+  outline: 0.15rem #32f solid;
+}
+
+.error {
+  outline: 0.15rem #f14 solid;
+}
+output {
+  color: #f11;
+  font-size: 1.2rem;
+  text-indent: 1rem;
+  margin-bottom: 1rem;
+}
+
+.status {
+  margin: 1rem 0;
+  text-align: center;
+  color: #f11;
+  font-size: 1.2rem;
+}
+
+.post {
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #444;
+  color: white;
+}
+
+.post a {
+  color: #ddd;
+  transition: 0.3s ease-in color;
+}
+
+.post a::before {
+  content: "From: ";
+}
+
+.post a:hover {
+  color: white;
+}
+
+.post p {
+  text-indent: 0.4rem;
+  margin: 0.7rem 0;
+  text-align: justify;
+}
+
+.post span {
+  color: #ddd;
+}
+
+svg {
+  width: 2rem;
+}
+
+[role="navigation"] {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+[role="navigation"] a {
+  color: #ddd;
+  transition: 0.3s ease-in;
+  transition-property: color, text-decoration, font-size;
+  text-decoration: none;
+}
+
+[role="navigation"] a:hover {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+
+[role="navigation"] > div:first-of-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+[role="navigation"] > div:nth-of-type(2) > div > p {
+  text-align: center;
+}
+
+[role="navigation"] > div:nth-of-type(2) > div:nth-of-type(2) > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+[role="navigation"]
+  > div:nth-of-type(2)
+  > div:nth-of-type(2)
+  > span
+  > span[aria-current="page"] {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+[role="navigation"]
+  > div:nth-of-type(2)
+  > div:nth-of-type(2)
+  > span
+  > [aria-label*="Previous"] {
+  margin-right: auto;
+}
+
+[role="navigation"]
+  > div:nth-of-type(2)
+  > div:nth-of-type(2)
+  > span
+  > [rel="next"] {
+  margin-left: auto;
+}
